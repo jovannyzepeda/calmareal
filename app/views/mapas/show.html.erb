@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @mapa.titulo %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @mapa.descripcion %>
+</p>
+
+<p>
+  <strong>Lon:</strong>
+  <%= @mapa.lon %>
+</p>
+
+<p>
+  <strong>Alt:</strong>
+  <%= @mapa.alt %>
+</p>
+
+<%= link_to 'Edit', edit_mapa_path(@mapa) %> |
+<%= link_to 'Back', mapas_path %>

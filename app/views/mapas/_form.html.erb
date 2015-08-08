@@ -1,0 +1,33 @@
+<%= form_for(@mapa) do |f| %>
+  <% if @mapa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mapa.errors.count, "error") %> prohibited this mapa from being saved:</h2>
+
+      <ul>
+      <% @mapa.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :titulo %><br>
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion %><br>
+    <%= f.text_area :descripcion %>
+  </div>
+  <div class="field">
+    <%= f.label :lon %><br>
+    <%= f.text_field :lon %>
+  </div>
+  <div class="field">
+    <%= f.label :alt %><br>
+    <%= f.text_field :alt %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
