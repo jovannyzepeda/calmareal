@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/constantm/Flexslider-2-Rails-Gem.git
+  revision: 3a87fd2250bc60659b0a3c494bb5a246d3b85395
+  specs:
+    flexslider (2.2.0)
+      sass-rails (>= 3.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -171,6 +178,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   devise
+  flexslider!
   gmaps4rails
   jbuilder (~> 2.0)
   jquery-rails

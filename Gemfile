@@ -49,3 +49,5 @@ gem 'devise'
 gem 'paperclip'
 gem 'will_paginate' 
 gem 'gmaps4rails'
+
+gem 'flexslider', :git => 'https://github.com/constantm/Flexslider-2-Rails-Gem.git'

@@ -20,11 +20,11 @@
     <%@notices.each do |noticia|%>
       <%if val == 0%>
       <div class="item active">
-        <%= image_tag noticia.imagen.url(:thumb) , class: 'img-responsive carousel'%>
+        <%= image_tag noticia.imagen.url(:thumb) , class: ''%>
       </div>
       <%else%>
         <div class="item">
-          <%= image_tag noticia.imagen.url(:thumb) , class: 'img-responsive'%>
+          <%= image_tag noticia.imagen.url(:thumb) , class: ''%>
         </div>
       <%end%>
       <%val = val +1%>
