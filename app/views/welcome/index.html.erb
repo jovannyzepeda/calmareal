@@ -1,22 +1,8 @@
 <section>
   <div class= "col-md-12">
     <div class="col-md-6">
-      <%@notices.each do |noticia|%>
-          <div class="col-md-6">
-            <%= image_tag noticia.imagen.url(:thumb) , class: 'img-responsive carousel'%>
-          </div>
-          <div class="col-md-6">
-            <h3 class="proyect_name alert alert-info">
-            	<strong><%= noticia.Titulo%></strong>
-          	</h3>
-            <p class="arial">
-              <%=noticia.contenido%>
-            </p>
-          </div>
-      <%end%>
-      <div class="col-md-12">
-        <%=  will_paginate @notices, :previous_label => '&laquo Anterior', :next_label => '&raquo Siguiente'%>
-      </div>
+      
+    <%=render "parcial/carousel"%>
     </div>
     <div class="col-md-6">
       <%= render "parcial/maps"  %>

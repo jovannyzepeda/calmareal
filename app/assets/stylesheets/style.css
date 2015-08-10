@@ -15,7 +15,7 @@ a.article{
 	color: black;
 }
 img.carousel{
-	height: 200px !important;
+	height: 200px !important;  
 }
 ol{
 	background-color: rgba(0, 0, 0, 0.6);
@@ -116,4 +116,21 @@ header.mascotas{
 /* Bootstrap Css Map Fix*/
 #map-container #map-canvas label {
   width: auto; display:inline;
+}
+
+
+/*css para maquetar  imagenes*/
+.imagen_thumb{
+  width: 50%;
+  height: 400px;
+  float: left;
+}
+/*css para maquetar contenido*/
+.content{
+  font-family: arial;
+  font-size: 14px;
+  width: 50%;
+  height: 400px;
+  float: right;
+  text-align: center;
 }
