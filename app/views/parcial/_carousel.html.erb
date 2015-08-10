@@ -1,18 +1,5 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <%val = 0%>
-    <%@notices.each do |noticia|%>
-      <%if val == 0%>
-        <li data-target="#myCarousel" data-slide-to="<%=val%>" class="active">
-        </li>
-      <%else%>
-        <li data-target="#myCarousel" data-slide-to="<%=val%>">
-        </li>
-      <%end%>
-      <%val = val +1%>
-    <%end%>
-  </ol>
+  
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
@@ -20,11 +7,31 @@
     <%@notices.each do |noticia|%>
       <%if val == 0%>
       <div class="item active">
-        <%= image_tag noticia.imagen.url(:thumb) , class: 'img-responsive carousel'%>
+        <div class="imagen_thumb">
+          <%= image_tag noticia.imagen.url(:thumb) , class: 'img-responsive carousel'%>
+        </div>
+        <div class="content text-right">
+          <h3 class="proyect_name alert alert-info">
+            <strong>
+              <%=noticia.Titulo%>
+            </strong>
+          </h3>
+          <%=noticia.contenido%>
+        </div>
       </div>
       <%else%>
         <div class="item">
-          <%= image_tag noticia.imagen.url(:thumb) , class: 'img-responsive'%>
+          <div class="imagen_thumb">
+            <%= image_tag noticia.imagen.url(:thumb) , class: 'img-responsive carousel'%>
+          </div>
+          <div class="content">
+            <h3 class="proyect_name alert alert-info t">
+            <strong>
+              <%=noticia.Titulo%>
+            </strong>
+          </h3>
+            <%=noticia.contenido%>
+          </div>
         </div>
       <%end%>
       <%val = val +1%>
@@ -40,4 +47,18 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <%val = 0%>
+    <%@notices.each do |noticia|%>
+      <%if val == 0%>
+        <li data-target="#myCarousel" data-slide-to="<%=val%>" class="active">
+        </li>
+      <%else%>
+        <li data-target="#myCarousel" data-slide-to="<%=val%>">
+        </li>
+      <%end%>
+      <%val = val +1%>
+    <%end%>
+  </ol>
 </div>

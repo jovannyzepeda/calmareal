@@ -117,3 +117,20 @@ header.mascotas{
 #map-container #map-canvas label {
   width: auto; display:inline;
 }
+
+
+/*css para maquetar  imagenes*/
+.imagen_thumb{
+  width: 50%;
+  height: 400px;
+  float: left;
+}
+/*css para maquetar contrnido*/
+.content{
+  font-family: arial;
+  font-size: 14px;
+  width: 50%;
+  height: 400px;
+  float: right;
+  text-align: center;
+}
