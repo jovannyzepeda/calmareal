@@ -408,3 +408,13 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+p.promotion{
+    background-color: #D16055;
+    color: white;
+    margin-bottom: 1px;
+}
+div.lineal{
+    margin-top: 15px;
+}
+
+

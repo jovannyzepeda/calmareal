@@ -15,7 +15,7 @@ a.article{
 	color: black;
 }
 img.carousel{
-	height: 200px !important;
+	height: 200px !important;  
 }
 ol{
 	background-color: rgba(0, 0, 0, 0.6);
@@ -125,7 +125,7 @@ header.mascotas{
   height: 400px;
   float: left;
 }
-/*css para maquetar contrnido*/
+/*css para maquetar contenido*/
 .content{
   font-family: arial;
   font-size: 14px;

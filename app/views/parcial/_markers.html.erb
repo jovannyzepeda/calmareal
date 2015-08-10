@@ -1,0 +1,24 @@
+
+<div class="flexslider">
+  <ul class="slides">
+    <%@marks.each do |marca|%>
+    <li>
+      <%= image_tag marca.promocion.url(:thumb)%>
+    </li>
+    <%end%>
+  </ul>
+</div>
+
+<script type="text/javascript">
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 200,
+        itemheight: 200,
+        itemMargin: 5,
+        minItems: 2,
+        maxItems: 4
+      });
+    });
+</script>
