@@ -3,5 +3,6 @@ class WelcomeController < ApplicationController
     @notices = Notice.paginate(:page => params[:page], :per_page => 1).ultimos
     @mapas = Mapa.all
     @marks = Mark.all
+    @video = Video.last
   end
 end
