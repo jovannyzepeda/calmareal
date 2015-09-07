@@ -134,3 +134,13 @@ header.mascotas{
   float: right;
   text-align: center;
 }
+.videoweek{
+    float: right;
+  max-width: auto;
+  min-width: auto;
+}
+.col-md-7{
+  float: left;
+}
+
+

@@ -1,0 +1,8 @@
+<link rel="stylesheet" media="mediatype and|not|only (media feature)" href="style.css">
+
+	<div id="myvideo" class="videoweek"> 
+	
+		<%if @video.present?%>
+			<%= video_tag @video.video ,controls: true, autobuffer: true %>
+		<%end%>
+	</div>

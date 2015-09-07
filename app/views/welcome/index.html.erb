@@ -1,19 +1,29 @@
 <section>
   <div class= "col-md-12">
-    <div class="col-md-6">
-      
-    <%=render "parcial/carousel"%>
-    </div>
-    <div class="col-md-6">
-      <%= render "parcial/maps"  %>
-    </div>
+      <div class="col-md-6">
+        <%=render "parcial/carousel"%>
+      </div>
+      <div class="col-md-6">
+        <%= render "parcial/maps"  %>
+      </div>
   </div>
   <div class="col-md-12 lineal">
     <div class="col-md-8">
       <%=render "parcial/markers"%>
     </div>
-    <div class="col-md-4">
-      
+    <div id="food" class="col-md-7">
+      <%=render "parcial/alimentacion"%>
+     </div>
+    <div class="col-md-4"> 
+      <div id="myvideo" class="videoweek"> 
+        <%=render "parcial/video" %>
+      </div>
+       <div id="shop" class="col-md-6">
+          <%=render "parcial/tienda" %>
+       </div>
+        <div id="pay" class="col-md-6">
+          <%=render "parcial/paypal" %>
+        </div>
     </div>
-  </div>
+    </div>
 </section>

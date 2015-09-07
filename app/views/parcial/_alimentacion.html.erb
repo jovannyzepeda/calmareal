@@ -1,0 +1,24 @@
+<div  id ="food" class="food-&care"> 
+	<hr>
+	<p><h2>¿Que y cuanto debe comer tu mascota?</h2></p>
+	<hr>
+	<form>
+		<%= form_for(@alimentacion) do |f| %>
+  		<div class="form-group">
+    		<label for="name">Nombre</label>
+    		<input type="text"  id="exampleInputName1" placeholder="Max" class="col-lg-offset-2 col-lg-10">
+  		</div>
+  		
+		<br> 
+		<%= f.select(:tipo) do %>
+ 		<%= content_tag(:option, "Edad", value: "Edad") %> 
+		<%= content_tag(:option, "Tamaño", value: "Tamaño") %> 
+		<%= content_tag(:option, "Raza", value: "Raza") %> 
+		<%= content_tag(:option, "Cuidados Especiales", value: "Cuidados Especiales") %> 
+		<%end%>
+		<%end%>
+  		<br>
+  		<br>
+     	<button type="button" class="btn btn-primary">Recomendacion</button>
+	</form>
+</div>
